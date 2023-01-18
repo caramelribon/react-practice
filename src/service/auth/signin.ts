@@ -26,7 +26,7 @@ const signin = async (
   context: ApiContext,
   params: SigninParams
 ): Promise<User> => {
-  return await fetcher(`${context.apiRootUel.replace(/\/$/, "")}/auth/signin`, {
+  return await fetcher(`${context.apiRootUrl.replace(/\/$/, "")}/auth/signin`, {
     method: "POST",
     headers: {
       Accept: "application/json",
